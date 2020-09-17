@@ -220,13 +220,13 @@ dt.hist(column='Idade',bins=10)
 - Mostrar grafico
 plt.show()
 ```
-![Hist](../Python/histograma.png)
+![Hist](https://github.com/pedrohnz/PYData-Documantation/blob/master/histograma.png)
 ```Python
 - Criar grafico de caixa
 dt.boxplot(column='Idade')
 plt.show()
 ```
-![Box](../Python/boxplot.png)
+![Box](https://github.com/pedrohnz/PYData-Documantation/blob/master/boxplot.png)
 ```Python
 x = [1,2,3,4,5,6,7,8,9,10]
 y = [1,2,3,4,5,6,7,8,9,10]
@@ -234,7 +234,7 @@ y = [1,2,3,4,5,6,7,8,9,10]
 plt.scatter(x,y)
 plt.show()
 ```
-![Ponto](../Python/pontos.png)
+![Ponto](https://github.com/pedrohnz/PYData-Documantation/blob/master/pontos.png)
 ```Python
 import numpy as np 
 - Criar array de 0 a 1000 de 1 em 1
@@ -243,4 +243,4 @@ x1 = np.arange(0,1000,1)
 plt.plot(x1,x1**2)
 plt.show()
 ```
-![Plot](../Python/plot.png)
+![Plot](https://github.com/pedrohnz/PYData-Documantation/blob/master/plot.png)
