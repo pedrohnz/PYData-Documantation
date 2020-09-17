@@ -1,12 +1,12 @@
 #       Guia Data Science
 
-###Instalações 
+### Instalações 
 
 - [x] Python 3.8;
 - [x] Jupyter;
 - [x] Visual Studio Code;
 
-###Listas
+### Listas
 
 `
 lista1 = [1,2,3]
