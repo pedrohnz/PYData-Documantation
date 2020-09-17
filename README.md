@@ -244,3 +244,57 @@ plt.plot(x1,x1**2)
 plt.show()
 ```
 ![Plot](https://github.com/pedrohnz/PYData-Documantation/blob/master/plot.png)
+
+### Tratando dados NaN (Dados Faltantes)
+
+```Python
+- Dropna = tirar dados NaN dt=dataframe
+dt2 = dt.dropna()
+- Se for nulo:
+ifnull = dt.isnull()
+ifnull.head()
+-Output: 
+ID	Name	Sex	Age	Height	Weight	Team	NOC	Games	Year	Season	City	Sport	Event	Medal
+0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True
+1	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True
+2	False	False	False	False	True	True	False	False	False	False	False	False	False	False	True
+3	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False
+4	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True
+- Ver quantos dados faltantes
+faltantes = dt.isnull().sum()
+print(faltantes)
+- Output :
+ID             0
+Name           0
+Sex            0
+Age         9474
+Height     60171
+Weight     62875
+Team           0
+NOC            0
+Games          0
+Year           0
+Season         0
+City           0
+Sport          0
+Event          0
+Medal     231333
+- Substituir dados faltantes
+dt['Medal'].fillna('Nenhuma',inplace=True)
+dt['Medal']
+-Output
+0         Nenhuma
+1         Nenhuma
+2         Nenhuma
+3            Gold
+4         Nenhuma
+           ...   
+271111    Nenhuma
+271112    Nenhuma
+271113    Nenhuma
+271114    Nenhuma
+271115    Nenhuma
+```
+
+Opa por enquanto é isso!
+Pedro Henrique 2020
